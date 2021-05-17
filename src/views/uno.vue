@@ -365,12 +365,18 @@ $(document).ready(function() {
   max-width:100%;
 }
 
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg%27%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+@media (max-width: 850px){
+  .card{
+    min-width:200%;
+  }
 }
-
-.custom-toggler.navbar-toggler {
+.custom-toggler .navbar-toggler {
   border-color: white;
+}
+.navbar-toggler{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg%27%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 body {
 	font-family: 'Varela Round', sans-serif;
@@ -386,11 +392,6 @@ body {
 	padding-right: 16px;
 	border-radius: 0;
 	
-}
-.navigacija{
-	position:fixed;
-	z-index:99;
-	width:100%;
 }
 .nav-link img {
 	border-radius: 50%;
@@ -543,6 +544,11 @@ body {
 }
 .ck{
 	padding-bottom:100px;
+}
+.navigacija{
+	position:fixed;
+	z-index:99;
+	width:100%;
 }
 @media (min-width: 1200px){
 	.form-inline .input-group {
@@ -799,5 +805,6 @@ div.material-table table th:last-child,
 div.material-table table td:last-child {
   padding: 0 14px 0 0;
 }
+
 
 </style>

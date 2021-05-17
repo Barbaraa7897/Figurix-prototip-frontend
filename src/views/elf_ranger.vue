@@ -1339,6 +1339,9 @@
 </svg>
 
 </div>
+<div class="pozgumba">
+	<button type="button" class="btn btn-dark gumb">Pretvori u sliku</button>
+</div>
  </div> 
 </template>
 
@@ -1346,20 +1349,25 @@
 	.pf0{fill-rule:evenodd;clip-rule:evenodd;fill:#B5B7BB;;}
 	.pf1{fill-rule:evenodd;clip-rule:evenodd;fill:#B5B7BB;;}
 	.pf2{fill-rule:evenodd;clip-rule:evenodd;fill:#B5B7BB;}
-	.pf3{fill-rule:evenodd;clip-rule:evenodd;fill:#F4BE6E;}
+	.pf3{fill-rule:evenodd;clip-rule:evenodd;fill:#535353;}
 	.pf4{fill-rule:evenodd;clip-rule:evenodd;fill:#535353;}
 	.pf5{fill-rule:evenodd;clip-rule:evenodd;fill:#B5B7BB;}
-	.pf6{fill-rule:evenodd;clip-rule:evenodd;fill:rgb(150, 150, 112);}
+	.pf6{fill-rule:evenodd;clip-rule:evenodd;fill:#535353}
 	.pf7{fill-rule:evenodd;clip-rule:evenodd;fill:#B5B7BB;}
 	.pf8{fill-rule:evenodd;clip-rule:evenodd;fill:#B5B7BB;}
 </style>
 <style>
 
-
+.pozgumba{
+	margin-left:15px;
+}
+.gumb{
+	padding:10px;
+}
 
 .uredi1{
 	display:flex;
-	position:absolute;
+	position:relative;
 
 }
 

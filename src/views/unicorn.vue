@@ -1862,6 +1862,9 @@
 
 
     </div>
+	<div class="pozgumba">
+		<button type="button" class="btn btn-dark gumb">Pretvori u sliku</button>
+	</div>
     </div> 
 </template>
 	<style type="text/css">
@@ -1887,12 +1890,18 @@
 	.st8{fill-rule:evenodd;clip-rule:evenodd;fill:#969696;}
 </style>
 <style>
+.pozgumba{
+	margin-left:15px;
+}
+.gumb{
+	padding:10px;
+}
 .tekst_figure{
     margin-left: 35px;
 }
 .uredi{
 	display:flex;
-	position:absolute;
+	position:relative;
 }
 
 .select{
@@ -1917,6 +1926,7 @@
 .shape{
     width:500px;
     height:500px;
+	margin-top:60px;
 }
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg%27%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");

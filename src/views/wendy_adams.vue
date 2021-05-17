@@ -59,21 +59,6 @@
 		<option value="kir4">Boja kave</option>
         <option value="kir5">Tamno Crvena</option>
     </select>
-	<select class="select" name="dip" id="dip" onclick="obojiDip();">
-		<option>Detalji i prijestolje</option>
-		<option value="dip1">Žuta</option>
-		<option value="dip2">Siva</option>
-		<option value="dip3">Ljubičasta</option>
-		<option value="dip4">Plava</option>
-        <option value="dip5">Tamno Crvena</option>
-    </select>
-    <select class="select" name="lice" id="lice" onclick="obojiLice();">
-		<option>Lice </option>
-		<option value="l1">Bijela</option>
-		<option value="l2">Siva</option>
-		<option value="l3">Boja kave</option>
-		<option value="l4">Crna</option>
-    </select>
      <select class="select" name="sjenaa" id="sjenaa" onclick="obojiSjenaa();">
 		<option>Sjene </option>
 		<option value="sjenaa1">Bijela</option>
@@ -81,20 +66,13 @@
 		<option value="sjenaa3">Boja kave</option>
 		<option value="sjenaa4">Crna</option>
     </select>
-      <select class="select" name="ispune" id="ispune" onclick="obojiIspune();">
-		<option>Ispune</option>
-		<option value="ispuna1">Boja kave</option>
-		<option value="ispuna2">Siva</option>
-		<option value="ispuna3">Lila</option>
-		<option value="ispuna4">Plava</option>
-    </select>
 
 	</div>
 	
 
 <svg version="1.1" class="shape" id="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="px" y="px"
 	 viewBox="0 0 500 500" style="enable-background:new 0 0 400 400;" xml:space="preserve">
-<g id="svgg">
+<g id="svgg" class="wendy">
 	<path id="wendy1" class="st0" d="M182.4,39.5c-1,0.4-2,0.8-2.3,0.7c-6.6-1.1-18,12.8-17.1,20.8c0.1,1.1,0.4,5.5,0.6,9.8
 		c0.5,9.5,0.7,10.5,3.1,11c0.3,0.1,0.9,0.4,1.5,0.7c2.7,1.8,3.3-0.2,1.3-3.9c-0.7-1.3-1.4-2.8-1.5-3.5c-0.2-0.6-0.5-1.7-0.7-2.3
 		c-1.6-4.6-2.4-8.2-2.1-9.1c0.2-0.6,0.3-1.6,0.2-2.2c-0.2-1.2,0.4-3.3,1-3.3c0.2,0,0.3,1.3,0.3,2.8c0,1.8,0.2,2.9,0.5,3
@@ -1079,25 +1057,34 @@
 </svg>
 
 </div>
+<div class="pozgumba">
+	<button type="button" class="btn btn-dark gumb">Pretvori u sliku</button>
+</div>
  </div> 
 </template>
 
 <style type="text/css">
-	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#B5B7BB;;}
-	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#B5B7BB;;}
-	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#d6d32a;;}
-	.st3{fill-rule:evenodd;clip-rule:evenodd;fill:#B5B7BB;;}
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#B5B7BB;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#3e3838;}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#d6d32a;}
+	.st3{fill-rule:evenodd;clip-rule:evenodd;fill:#B5B7BB;}
 	.st4{fill-rule:evenodd;clip-rule:evenodd;fill:#4b4f5e;}
-	.st5{fill-rule:evenodd;clip-rule:evenodd;fill:#B5B7BB;;}
-	.st6{fill-rule:evenodd;clip-rule:evenodd;fill:#B5B7BB;;}
-	.st7{fill-rule:evenodd;clip-rule:evenodd;fill:#8d7c7c;}
-	.st8{fill-rule:evenodd;clip-rule:evenodd;fill:#B5B7BB;;}
+	.st5{fill-rule:evenodd;clip-rule:evenodd;fill:#c58c85;}
+	.st6{fill-rule:evenodd;clip-rule:evenodd;fill:#B5B7BB;}
+	.st7{fill-rule:evenodd;clip-rule:evenodd;fill:#8d7c7c}
+	.st8{fill-rule:evenodd;clip-rule:evenodd;fill:#535353;}
 </style>
 <style>
+.pozgumba{
+	margin-left:15px;
+}
+.gumb{
+	padding:10px;
+}
 
 .uredi2{
 	display:flex;
-	position:absolute;
+	position:relative;
 
 }
 
@@ -1123,6 +1110,7 @@
 .shape{
     width:500px;
     height:500px;
+	margin-top:30px;
 }
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg%27%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
