@@ -47,7 +47,7 @@
 				</div>
 			</nav>
 		</div>
-
+		<br><br>
         <section id="header" class="pozadina text-center">
      <h1 class="display-3">GALERIJA</h1>
      <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
@@ -295,6 +295,7 @@
         position:relative;
         background-repeat: no-repeat;
         background-size: cover;
+
     }
     .lead{
         text-indent: -9999px;
